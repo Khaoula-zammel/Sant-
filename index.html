@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Santé</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #2E7D32;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2E7D32;
+        }
+
+        .services, .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service, .member {
+            flex: 1 1 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service:hover, .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .service i {
+            font-size: 40px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .team img {
+            border-radius: 50%;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media(max-width: 600px){
+            .services, .team {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Service de Santé</h1>
+    <p>Votre santé, notre priorité</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#team">Équipe</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p style="text-align:center;">Nous offrons des soins de qualité pour tous. Notre équipe est là pour vous aider à rester en bonne santé, en toute confiance.</p>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="#contact" class="btn">Prendre rendez-vous</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="service">
+            <i class="fas fa-stethoscope"></i>
+            <h3>Consultation</h3>
+            <p>Consultations médicales sur rendez-vous ou en urgence.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-video"></i>
+            <h3>Téléconsultation</h3>
+            <p>Consultations à distance via vidéo pour votre confort.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-syringe"></i>
+            <h3>Vaccinations</h3>
+            <p>Vaccinations pour adultes et enfants selon le calendrier officiel.</p>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <h2>Notre Équipe</h2>
+    <div class="team">
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="Dr. Marie Dupont">
+            <h3>Dr. Marie Dupont</h3>
+            <p>Médecin généraliste</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="Infirmier Paul Martin">
+            <h3>Infirmier Paul Martin</h3>
+            <p>Soins et assistance médicale</p>
+        </div>
+        <div class="member">
+            <img src="https://via.placeholder.com/100" alt="Dr. Sophie Bernard">
+            <h3>Dr. Sophie Bernard</h3>
+            <p>Pédiatre</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p style="text-align:center;">Pour prendre rendez-vous ou pour toute question :</p>
+    <div style="text-align:center; margin-top:20px;">
+        <p>Téléphone : <a href="tel:+33123456789">01 23 45 67 89</a></p>
+        <p>Email : <a href="mailto:contact@service-sante.fr">contact@service-sante.fr</a></p>
+        <p>Adresse : 123 Rue de la Santé, Paris</p>
+        <a href="mailto:contact@service-sante.fr" class="btn">Envoyer un message</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Service de Santé. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+"ajout du site web"
